@@ -29,7 +29,7 @@ main {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0.65)),
-    url(./../assets/images/fondo-index.PNG);
+    url(./../assets/images/fondo-index.png);
   background-size: cover;
   background-position: center;
 }
