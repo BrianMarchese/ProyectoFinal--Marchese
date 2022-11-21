@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: #999999;
+  background-color: #999999;
 }
 
 .nav-link:hover {
@@ -18,13 +18,26 @@ header {
   transition: 0.4s;
 }
 
-main {
-     background-image: linear-gradient(to bottom, #8090a8, #a2aabd, #c2c5d2, #e1e1e8, #ffffff);
+.nav-item a:hover {
+  transform: scale(1.05); /* agregado que faltaba a la navbar*/
 }
 
-.fondo { /* aplico la imagen de fondo y le doy el efecto de transparencia*/
+main {
+  min-height: 100vh; /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
+  background-image: linear-gradient(
+    to bottom,
+    #8090a8,
+    #a2aabd,
+    #c2c5d2,
+    #e1e1e8,
+    #ffffff
+  );
+}
+
+.fondo {
+  /* aplico la imagen de fondo y le doy el efecto de transparencia*/
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,41 +47,40 @@ main {
   background-position: center;
 }
 
-.fondoTexto { /* acomodo el texto de arriba de la imagen*/
+.fondoTexto {
+  /* acomodo el texto de arriba de la imagen*/
   color: white;
   text-align: center;
   width: 50%;
 }
 
-form { /* personalizo el formulario */
-  width: 300px;
+form {
+  /* personalizo el formulario */
   padding: 16px;
   border-radius: 10px;
-  margin: auto;
   background-color: rgba(10, 125, 202, 0.644);
 }
 
-form label { /* personalizo el formulario */
+/* form label { personalizo el formulario 
   font-weight: bold;
   display: inline-block;
 }
-
+ */
 form input[type="text"], /* personalizo el formulario */
 form input[type="email"] {
-  width: 180px;
-  padding: 3px 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid black;
   border-radius: 3px;
-  background-color: #f6f6f6;
+  background-color: white;
   margin: 8px 0;
-  display: inline-block;
 }
 
-textarea {
+.form-group textarea {
   resize: none;
+  border: 2px solid black;
 }
 
-.boton { /* boton de formulario con animacion */
+.boton {
+  /* boton de formulario con animacion */
   width: 100%;
   padding: 8px 16px;
   margin-top: 2rem;
@@ -92,21 +104,34 @@ textarea {
   transform: translateY(-1px);
 }
 
-.galeria .col-lg-4 { /* acomodo las imagenes de la galeria */
+.galeria .col-lg-4 {
+  /* acomodo las imagenes de la galeria */
   margin: 0px;
   padding: 25px;
 }
 .galeria img {
   width: 100%;
   height: 250px;
+  border-radius: 10px;
+  transition: 0.5s all ease; /* AGREGADO DE ANIMACIONES A IMG Y RADIUS, AGREGAR AL ORIGINAL */
 }
 
-.galeria:hover {
-  border: 4px solid white;
+.galeria img:hover {
+  transform: scale(1.2);
+}
+
+.paddingAbout {
+  margin-top: 6%;
 }
 
 footer {
   text-align: center;
   background-color: black;
   color: white;
+  margin-top: auto;
+  height: 30px;
+}
+
+.holi p {
+  font-size: 19px;
 }
