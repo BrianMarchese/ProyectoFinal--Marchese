@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Sono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Sono", sans-serif;
+}
+
+h1,
+a,
+span {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -34,7 +43,8 @@ main {
   );
 }
 
-.fondo {   /* aplico la imagen de fondo y le doy el efecto de transparencia*/
+.fondo {
+  /* aplico la imagen de fondo y le doy el efecto de transparencia*/
   width: 100%;
   height: 100vh;
   display: flex;
@@ -46,13 +56,15 @@ main {
   background-position: center;
 }
 
-.fondoTexto {   /* acomodo el texto de arriba de la imagen*/
+.fondoTexto {
+  /* acomodo el texto de arriba de la imagen*/
   color: white;
   text-align: center;
   width: 50%;
 }
 
-form {   /* personalizo el formulario */
+form {
+  /* personalizo el formulario */
   padding: 16px;
   border-radius: 10px;
   background-color: rgba(10, 125, 202, 0.644);
@@ -66,12 +78,14 @@ form input[type="email"] {
   margin: 8px 0;
 }
 
-.form-group textarea { /* estilizo el text area */
+.form-group textarea {
+  /* estilizo el text area */
   resize: none;
   border: 2px solid black;
 }
 
-.boton {   /* boton de formulario con animacion */
+.boton {
+  /* boton de formulario con animacion */
   width: 100%;
   padding: 8px 16px;
   margin-top: 2rem;
@@ -84,7 +98,8 @@ form input[type="email"] {
   outline: none;
 }
 
-.boton:hover { /* animacion de boton al pasar el mouse */
+.boton:hover {
+  /* animacion de boton al pasar el mouse */
   background-color: white;
   box-shadow: 0px 15px 20px rgba(7, 125, 223, 0.4);
   color: rgb(0, 0, 0);
@@ -95,7 +110,8 @@ form input[type="email"] {
   transform: translateY(-1px);
 }
 
-.galeria .col-lg-4 { /* acomodo las imagenes de la galeria */
+.galeria .col-lg-4 {
+  /* acomodo las imagenes de la galeria */
   margin: 0px;
   padding: 25px;
 }
@@ -106,11 +122,13 @@ form input[type="email"] {
   transition: 0.5s all ease;
 }
 
-.galeria img:hover { /* Al pasar el mouse sobre la imagen hace animacion de agrandarse */
+.galeria img:hover {
+  /* Al pasar el mouse sobre la imagen hace animacion de agrandarse */
   transform: scale(1.2);
 }
 
-.paddingAbout { /* Le doy un padding a la pagina de sobre nosostros para que quede mas prolija*/
+.paddingAbout {
+  /* Le doy un padding a la pagina de sobre nosostros para que quede mas prolija*/
   margin-top: 6%;
 }
 
