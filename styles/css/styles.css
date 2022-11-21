@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Sono&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -16,23 +15,23 @@ header {
   background-color: #999999;
 }
 
-.nav-link:hover {
-  color: black;
-}
 .nav-link {
   color: white;
+}
+.nav-link:hover {
+  transition: 0.4s;
 }
 
 .nav-item a {
   transition: 0.4s;
 }
-
 .nav-item a:hover {
   transform: scale(1.05);
 }
 
 main {
-  min-height: 100vh; /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
+  min-height: 100vh;
+  /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
   background-image: linear-gradient(
     to bottom,
     #8090a8,
@@ -44,14 +43,12 @@ main {
 }
 
 .fondo {
-  /* aplico la imagen de fondo y le doy el efecto de transparencia*/
+  background-image: url(./../../assets/images/fondo-index.jpg);
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0.65)),
-    url(./../assets/images/fondo-index.png);
   background-size: cover;
   background-position: center;
 }
@@ -69,19 +66,14 @@ form {
   border-radius: 10px;
   background-color: rgba(10, 125, 202, 0.644);
 }
-
-form input[type="text"], /* personalizo el formulario */
-form input[type="email"] {
-  border: 2px solid black;
-  border-radius: 3px;
+form .formInput {
+  border: 2px solid Black;
   background-color: white;
   margin: 8px 0;
 }
-
-.form-group textarea {
-  /* estilizo el text area */
+form .form-group textarea {
   resize: none;
-  border: 2px solid black;
+  border: 2px solid Black;
 }
 
 .boton {
@@ -89,41 +81,36 @@ form input[type="email"] {
   width: 100%;
   padding: 8px 16px;
   margin-top: 2rem;
-  background-color: black;
+  background-color: Black;
   border-radius: 5px;
   color: white;
-  box-shadow: 0px 8px 15px rgb(0, 0, 0);
+  box-shadow: 0px 8px 15px black;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
-
 .boton:hover {
-  /* animacion de boton al pasar el mouse */
   background-color: white;
   box-shadow: 0px 15px 20px rgba(7, 125, 223, 0.4);
-  color: rgb(0, 0, 0);
+  color: black;
   transform: translateY(-7px);
 }
-
 .boton:active {
   transform: translateY(-1px);
 }
 
 .galeria .col-lg-4 {
-  /* acomodo las imagenes de la galeria */
   margin: 0px;
   padding: 25px;
 }
+
 .galeria img {
   width: 100%;
   height: 250px;
   border-radius: 10px;
   transition: 0.5s all ease;
 }
-
 .galeria img:hover {
-  /* Al pasar el mouse sobre la imagen hace animacion de agrandarse */
   transform: scale(1.2);
 }
 
@@ -139,7 +126,7 @@ form input[type="email"] {
 
 footer {
   text-align: center;
-  background-color: black;
+  background-color: Black;
   color: white;
   margin-top: auto;
   height: 30px;

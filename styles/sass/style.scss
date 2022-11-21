@@ -1,0 +1,147 @@
+@import "./utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Sono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fuentePrincipal;
+}
+
+h1,
+a,
+span {
+  font-family: $fuenteSecundaria;
+}
+
+header {
+  background-color: $coloNavbar;
+}
+
+
+.nav-link{
+  color: white;
+  &:hover{
+    transition: 0.4s;
+  }
+}
+
+.nav-item{
+  a{
+    transition: 0.4s;
+     &:hover{
+    transform: scale(1.05);
+    }
+   }
+  }
+ 
+
+main {
+  min-height: 100vh; /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
+  background-image: linear-gradient(
+    to bottom,
+    #8090a8,
+    #a2aabd,
+    #c2c5d2,
+    #e1e1e8,
+    #ffffff
+  );
+}
+
+.fondo {
+  background-image: $imagenDeFondo;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoTexto {
+  /* acomodo el texto de arriba de la imagen*/
+  color: $colorBlanco;
+  text-align: center;
+  width: 50%;
+}
+
+form {
+  /* personalizo el formulario */
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgba(10, 125, 202, 0.644);
+  .formInput{
+    border: 2px solid $colorNegro;
+    background-color: $colorBlanco;
+    margin: 8px 0;
+  }
+  .form-group{
+    textarea{
+      resize: none;
+      border: 2px solid $colorNegro;
+    }
+  }
+
+}
+
+
+
+.boton {
+  /* boton de formulario con animacion */
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  background-color: $colorNegro;
+  border-radius: 5px;
+  color: $colorBlanco;
+  box-shadow: 0px 8px 15px rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  &:hover{
+    background-color: $colorBlanco;
+    box-shadow: 0px 15px 20px rgba(7, 125, 223, 0.4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+  }
+  &:active{
+    transform: translateY(-1px);
+  }
+}
+
+
+
+.galeria {
+  .col-lg-4{
+    margin: 0px;
+    padding: 25px;
+  }
+  img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+.paddingAbout {
+  /* Le doy un padding a la pagina de sobre nosostros para que quede mas prolija*/
+  margin-top: 6%;
+}
+
+.agrandadoParrafo {
+  font-size: 19px;
+  color: $colorBlanco;
+}
+
+footer {
+  text-align: center;
+  background-color: $colorNegro;
+  color: $colorBlanco;
+  margin-top: auto;
+  height: 30px;
+}
