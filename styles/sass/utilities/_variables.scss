@@ -4,8 +4,8 @@ $fuenteSecundaria: "Roboto Condensed", sans-serif;
 
 $imagenDeFondo: url(./../../assets/images/fondo-index.jpg);
 
-$colorBlanco: white;
-
-$colorNegro: Black;
-
-$coloNavbar: #999999;
+$colores: (
+    Blanco: white,
+    Negro: Black,
+    Navbar: linear-gradient(to bottom, #1c68da, #326cc4, #466fad, #728aad, #7c889b),
+);
