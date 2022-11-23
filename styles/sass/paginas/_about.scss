@@ -1,0 +1,10 @@
+.paddingAbout {
+    /* Le doy un padding a la pagina de sobre nosostros para que quede mas prolija*/
+    margin-top: 6%;
+}
+
+.agrandadoParrafo {
+    font-size: 19px;
+    color: map-get($map: $colores, $key: Blanco);
+}
+  

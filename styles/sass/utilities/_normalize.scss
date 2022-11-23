@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Sono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fuentePrincipal;
+}
+
+h1,
+a,
+span {
+  font-family: $fuenteSecundaria;
+}
+ 
+  
+main {
+  min-height: 100vh; /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
+  background-image: linear-gradient(
+    to bottom,
+    #8090a8,
+    #a2aabd,
+    #c2c5d2,
+    #e1e1e8,
+    #ffffff
+    );
+}

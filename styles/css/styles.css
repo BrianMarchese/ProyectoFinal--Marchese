@@ -11,6 +11,19 @@ span {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+main {
+  min-height: 100vh;
+  /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
+  background-image: linear-gradient(
+    to bottom,
+    #8090a8,
+    #a2aabd,
+    #c2c5d2,
+    #e1e1e8,
+    #ffffff
+  );
+}
+
 header {
   background-image: linear-gradient(
     to bottom,
@@ -36,17 +49,12 @@ header {
   transform: scale(1.05);
 }
 
-main {
-  min-height: 100vh;
-  /* PARA DEJAR EL FOOTER SIEMPRE ABAJO */
-  background-image: linear-gradient(
-    to bottom,
-    #8090a8,
-    #a2aabd,
-    #c2c5d2,
-    #e1e1e8,
-    #ffffff
-  );
+footer {
+  text-align: center;
+  background-color: Black;
+  color: white;
+  margin-top: auto;
+  height: 30px;
 }
 
 .fondo {
@@ -131,10 +139,10 @@ form .form-group textarea {
   color: white;
 }
 
-footer {
-  text-align: center;
-  background-color: Black;
-  color: white;
-  margin-top: auto;
-  height: 30px;
+.card {
+  margin-right: 7px;
+}
+
+.card img {
+  height: 38%;
 }

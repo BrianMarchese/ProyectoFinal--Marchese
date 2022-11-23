@@ -1,0 +1,7 @@
+footer {
+    text-align: center;
+    background-color: map-get($map: $colores, $key: Negro);
+    color: map-get($map: $colores, $key: Blanco);
+    margin-top: auto;
+    height: 30px;
+}
