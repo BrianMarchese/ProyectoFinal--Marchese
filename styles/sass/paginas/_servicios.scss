@@ -3,5 +3,5 @@
 }
 
 .card img {
-    height: 38%;
+    @include tamanios(none, 38%);
 }

@@ -1,12 +1,12 @@
 form {
     /* personalizo el formulario */
-    padding: 16px;
+    @include separaciones(none, 16px);
     border-radius: 10px;
     background-color: rgba(10, 125, 202, 0.644);
     .formInput{
       border: 2px solid map-get($map: $colores, $key: Negro);
       background-color: map-get($map: $colores, $key: Blanco);
-      margin: 8px 0;
+      @include separaciones(8px 0, none);
     }
     .form-group{
       textarea{
@@ -19,8 +19,8 @@ form {
 
 .boton {
     /* boton de formulario con animacion */
-    width: 100%;
-    padding: 8px 16px;
+    @include tamanios(100%, none);
+    @include separaciones(none, 8px 16px);
     margin-top: 2rem;
     background-color: map-get($map: $colores, $key: Negro);
     border-radius: 5px;

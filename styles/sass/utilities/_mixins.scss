@@ -1,0 +1,16 @@
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin tamanios ($width, $height) {
+    width: $width;
+    height: $height; 
+    
+}
+
+@mixin separaciones ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

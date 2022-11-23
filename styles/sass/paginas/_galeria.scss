@@ -1,11 +1,9 @@
 .galeria {
     .col-lg-4 {
-      margin: 0px;
-      padding: 25px;
+      @include separaciones(0px, 25px);
     }
     img {
-      width: 100%;
-      height: 250px;
+      @include tamanios(100%, 250px);
       border-radius: 10px;
       transition: 0.5s all ease;
       &:hover{
