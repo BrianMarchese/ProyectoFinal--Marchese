@@ -1,6 +1,33 @@
 
-header {
+header { 
+  @if $blackFriday == true {
+    .navbar-brand {
+      color: rgb(255, 255, 255);
+        &:hover{
+          color: rgb(197, 211, 211);
+        }
+      }
+    .nav-item{
+      a{
+         &:hover{
+          color: rgb(197, 211, 211);
+        }
+       }
+    }
+    background-color: map-get($map:$colores , $key: Negro);
+    
+  }
+  @else{
     background-image: map-get($map: $colores, $key: Navbar);
+    .nav-item{
+      a{
+        transition: 0.4s;
+         &:hover{
+          transform: scale(1.05);
+        }
+       }
+   }
+  }
 }
 
 .nav-link{
@@ -8,13 +35,4 @@ header {
     &:hover{
       transition: 0.4s;
     }
-}
-
-.nav-item{
-    a{
-      transition: 0.4s;
-       &:hover{
-      transform: scale(1.05);
-      }
-     }
 }

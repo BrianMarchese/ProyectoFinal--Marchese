@@ -9,3 +9,5 @@ $colores: (
     Negro: Black,
     Navbar: linear-gradient(to bottom, #1c68da, #326cc4, #466fad, #728aad, #7c889b),
 );
+
+$blackFriday: false /* variable para el if, si es true la navbar se cambia a negro y si es false cambia a su color normal */

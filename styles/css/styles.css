@@ -1,3 +1,4 @@
+/* variable para el if, si es true la navbar se cambia a negro y si es false cambia a su color normal */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Sono&display=swap");
 * {
   margin: 0;
@@ -34,19 +35,18 @@ header {
     #7c889b
   );
 }
+header .nav-item a {
+  transition: 0.4s;
+}
+header .nav-item a:hover {
+  transform: scale(1.05);
+}
 
 .nav-link {
   color: white;
 }
 .nav-link:hover {
   transition: 0.4s;
-}
-
-.nav-item a {
-  transition: 0.4s;
-}
-.nav-item a:hover {
-  transform: scale(1.05);
 }
 
 footer {
