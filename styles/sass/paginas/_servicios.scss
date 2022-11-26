@@ -1,7 +1,12 @@
 .card {
-    margin-right: 7px;
+    margin-right: 1%;
+    margin-left: 1%
 }
 
 .card img {
     @include tamanios(none, 38%);
+}
+
+.margenTexto{
+    margin-left: 1%;
 }
