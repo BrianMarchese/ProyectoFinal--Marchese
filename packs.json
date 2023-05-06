@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "nombre":"Pack básico",
+        "descripcion":"2 bases alcohólicas a elección (de segunda marca), con la posibilidad de hacer 4 tragos distintos",
+        "precio":10000,
+        "imagen":"Pack1.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Pack intermedio",
+        "descripcion":"4 bases alcohólicas a elección (de primera marca), con la posibilidad de hacer 8 tragos distintos",
+        "precio":25000,
+        "imagen":"Pack2.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Pack completo",
+        "descripcion":"la cantidad de bases alcohólicas que quiera el contratador y a varidad de tragos que quiera(de primera marca)",
+        "precio":50000,
+        "imagen":"Pack3.jpg"
+    }
+]

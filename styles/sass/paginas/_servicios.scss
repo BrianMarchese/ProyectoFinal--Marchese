@@ -1,0 +1,24 @@
+.modal-header{
+    color: map-get($map: $colores, $key: Blanco);
+    background-color: #5485ce;
+}
+
+.modal-body{
+    background-color: #5485ce;
+}
+
+#precioTotal{
+    color:darkgreen
+}
+
+.email{
+    display: flex;
+}
+
+.MetodoPago{
+    margin-top: 5%;
+}
+
+#selectProvincias{
+    margin-top: 5%;
+}
