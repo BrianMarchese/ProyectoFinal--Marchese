@@ -149,3 +149,18 @@ function finalizarCompra(){
 botonFinalizarCompra.addEventListener("click", ()=>{
     finalizarCompra()
 })
+const selectProvincias = document.getElementById("selectProvincias")
+
+function provincia(){
+    fetch("https://apis.datos.gob.ar/georef/api/provincias")
+    .then(response => response.json())
+    .then(data =>{
+      let opciones = `<option value= "Selecciona tu provincia">Selecciona tu provincia</option>`;
+    
+      data.provincias.forEach(eleccion => opciones += `<option value= "${eleccion.nombre}">${eleccion.nombre}</option>`)
+    
+      selectProvincias.innerHTML = opciones
+})
+}
+
+document.addEventListener("DOMContentLoaded", provincia)
