@@ -1,24 +1,29 @@
 let packs = [];
+let productosEnCarrito = [];
+document.addEventListener("DOMContentLoaded", async () =>{
+    await traerObjetos()
+    // pregunto si hay productos en el carrito los traigo y sino genero un carrito vacio en el storage
+    productosEnCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    provincia() 
+})
 // traigo los objetos del json
 const traerObjetos = async()=>{
     const response = await fetch("./../packs.json")
     const data = await response.json()
     packs = data
-    mostratCatalogo()
+    mostrarCatalogo()
 }
 
-traerObjetos()
-
-let productosEnCarrito = JSON.parse(localStorage.getItem("carrito")) || []; 
 // Capturas del dom
 let divProductos = document.getElementById("productos")
 let modalBodyCarrito = document.getElementById("modal-bodyCarrito");
 let botonCarrito = document.getElementById("botonCarrito");
 let botonFinalizarCompra = document.getElementById("botonFinalizarCompra");
 let divPrecioTotal = document.getElementById("precioTotal");
+let selectProvincias = document.getElementById("selectProvincias")
 
-
-function mostratCatalogo(){ // funcion para crear las cards de cada producto
+// funcion para crear las cards de cada producto
+function mostrarCatalogo(){ 
     divProductos.innerHTML = ""
     for(let pack of packs){
         let nuevoPack = document.createElement("div")
@@ -76,7 +81,7 @@ function agregarAlCarrito(pack){
 function compraTotal(array){
     let acumulador = 0;
     acumulador = array.reduce((acumula, productoCarrito)=> acumula + productoCarrito.precio, 0)
-    acumulador == 0 ? divPrecioTotal.innerHTML = `<p>No hay productos en el carrito</p>` : divPrecioTotal.innerHTML = `<p>El total de el carrito es:$<strong>${acumulador}</strong></p>`;
+    acumulador == 0 ? divPrecioTotal.innerHTML = `<p>No hay productos en el carrito</p>` : divPrecioTotal.innerHTML = `<p>El total de su carrito es:$<strong>${acumulador}</strong></p>`;
 }
 // funcion para mostrar los productos en el model
 function CargarProductosCarrito(array){
@@ -149,7 +154,6 @@ function finalizarCompra(){
 botonFinalizarCompra.addEventListener("click", ()=>{
     finalizarCompra()
 })
-const selectProvincias = document.getElementById("selectProvincias")
 
 function provincia(){
     fetch("https://apis.datos.gob.ar/georef/api/provincias")
@@ -162,5 +166,3 @@ function provincia(){
       selectProvincias.innerHTML = opciones
 })
 }
-
-document.addEventListener("DOMContentLoaded", provincia)
